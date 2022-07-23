@@ -1,0 +1,49 @@
+.container{
+width:70%;
+display: flex;
+justify-content: center;
+align-items: center;
+/*border:2px solid blue;*/
+margin: 0 auto;
+margin-top: 20px;
+}
+.square{
+background: black;
+width:8px;
+margin: 3px;
+height: 40px;
+border-radius: 40px;
+}
+.sq1{
+animation: ballleft 0.5s ease infinite alternate ;
+}
+.sq2{
+animation: ballin 0.5s ease infinite alternate ;
+}
+.sq3{
+animation: ballright 0.5s ease infinite alternate ;
+}
+
+
+@keyframes ballleft{
+    to{
+        transform: translateX(-10px);
+    };
+}
+@keyframes ballright{
+    to{
+        transform: translateX(10px);
+    };
+}
+@keyframes ballin{
+    to{
+        transform: scaleY(.5);
+        background: gray;
+    };
+}
+@keyframes ballout{
+    to{
+        transform: scaleX(4);
+        background: gray;
+    };
+}    

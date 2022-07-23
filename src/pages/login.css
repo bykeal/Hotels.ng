@@ -1,0 +1,44 @@
+.login {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lcontainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+}
+
+.lInput{
+  height: 30px;
+  padding: 8px;
+}
+
+.lbutton {
+  border: none;
+  padding: 10px 20px;
+  background-color: #0071c2;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.lbutton:disabled{
+  background-color: #0071c28c;
+  cursor: not-allowed;
+}
+
+.errmessage{
+  border-radius: 5px;
+  position: absolute;
+  top: -70px;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 900;
+  background-color: red;
+  color: white;
+}
